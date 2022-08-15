@@ -51,6 +51,12 @@ p {
     color: hsl(220, 15%, 55%);
 }
 
+.attribution {
+
+    text-align: center;
+
+}
+
 @media (max-width: 375px) {
     .container{
         width: 375px;
