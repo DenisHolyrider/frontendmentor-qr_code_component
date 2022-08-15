@@ -5,24 +5,26 @@
     font-family: 'Outfit', sans-serif;
 }
 
+body {
+        background-color: hsl(212, 45%, 89%);
+}
+
 p {
     font-size: 15px;
 }
 
 .container {
     display: flex;
-    align-items: center;
     width: 1440px;
-    height: 720px;
-    background-color: hsl(212, 45%, 89%);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
 .card { 
-    display: block;
     height: 470px;
-    width: 300px;
+    width: 300px;   
     background-color: hsl(0, 0%, 100%);
-    margin: auto;
     box-shadow: 10px 10px 30px -20px hsl(220, 15%, 55%);
     border-radius: 7%;
 }
@@ -47,4 +49,12 @@ p {
     text-align: center;
     padding: 20px 20px;
     color: hsl(220, 15%, 55%);
+}
+
+@media (max-width: 375px) {
+    .container{
+        width: 375px;
+        background-color: red;
+    }
+
 }
